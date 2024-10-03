@@ -1,0 +1,342 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(221, 221, 221);
+    background-color: #212121;
+    margin-left: 50px;
+    overflow-x: hidden;}
+    
+#maincontainer {
+  display: flex;
+  justify-content: space-between;
+}
+        
+#hd{
+    font-size: 100px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+    width: 500px;
+    padding-top: 180px;
+    flex: 1;}
+
+#player{
+  flex: 1;
+}
+
+
+.navigation {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 20pxe;
+}
+
+.navigation__link {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  display: block;
+  font-weight: 900;
+  font-size: 5rem;
+  line-height: 1.5;
+  text-decoration: none;
+  color: transparent;
+  -webkit-text-stroke: 1px #ffffff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.navigation__link:hover {
+  color: #ffffff;
+  -webkit-text-stroke: 1px #212121;
+  transition: 0.25s;
+}
+.navigation__link:hover::before {
+  transform: translate(12px, -12px);
+  color: #ff1744;
+  -webkit-text-stroke: 1px #212121;
+}
+.navigation__link:hover::after {
+  transform: translate(24px, -24px);
+  color: #4dd0e1;
+  -webkit-text-stroke: 1px #212121;
+}
+.navigation__link::before, .navigation__link::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px transparent;
+}
+
+.div1, .div2, .div3{
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+}
+
+.div1{
+color: #ff1744;
+}
+.div2{
+color: #4dd0e1;
+}
+.div3{
+color: #ffffff;
+}
+
+#player{
+  display: grid;
+}
+
+#v1,#v2{
+  grid: 1;
+}
+
+#mrvel-video{
+  width: 650px;
+  margin-left: -500px;
+}
+
+#v1:hover{
+  position: fixed;
+  top: -70px;
+  left: 0px;
+  width: 100%;
+  margin-left: 500px;}
+
+#mrvel-video:hover{
+  width: 100%;}
+
+#dc-video{
+  width: 650px;
+  margin-left: -500px;
+
+}
+
+#hot{
+    margin: 200px;
+    margin-bottom: 0px;
+    padding: 20px;
+    width: 70px;
+    font-size: 40px;
+    background-color: #ff1744;
+    margin-left: -50px;
+    padding-left: 250px;
+    width: 90%;
+}
+
+#Gauntlet{
+    margin-left: -50px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 50px;
+    height: 1650px;
+    width: 100%
+    
+}
+
+#gimage{
+    scale: 0.7;
+    position: relative;
+    left: 80px;
+    top: -100px;
+}
+
+#gh3{
+    position: relative;
+    left: 840px;
+    top: -1150px;
+    font-size: 40px;
+    width: 500px;
+}
+
+#gh5{
+    color: #a7a7a7;
+    font-size: 30px;
+}
+
+#gh33{
+    position: relative;
+    left: 840px;
+    top: -1150px;
+    font-size: 40px; 
+    width: 30px;
+}
+
+p{
+    font-size: 20px;
+    width: 550px;
+}
+
+#moredetails{
+  padding: 50px;
+  position: relative;
+  left: 165px;
+  top: -1050px;
+}
+
+
+#latestc{
+    margin-left: 200px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding: 20px;
+    font-size: 40px;
+}
+
+#container1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#c1{
+  flex: 1;
+  margin-left: 150px;
+  background-color: #1e2029;
+  padding: 30px;
+  scale: 0.8;
+}
+
+#c2{
+  flex: 1;
+  margin-right: 150px;
+  background-color: #1e2029;
+  padding: 30px;
+  scale: 0.8;
+}
+
+#c1image, #c2image{
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#b1{
+  background-color: #ff1744;
+  border: none;
+  color: #a7a7a7;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 700;
+}
+
+
+#inbox{
+  padding-top: 100px;
+}
+
+#form{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#email{
+  padding: 20px;
+  width: 400px;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 4px solid #ff1744;
+  background-color: #ff1744;
+  transition: 0.3s;
+}
+
+#email:hover, #email:focus {
+   background-color: white;
+ } 
+
+#submit{
+  height: 70px;
+  border: 4px solid #4dd0e1;
+  padding: 20px;
+  width: 150px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #4dd0e1;
+  font-size: larger;
+  font-weight: 700;
+  color: white;
+}
+
+footer{
+  background-color: black;
+  margin-left: -50px;
+  padding: 250px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: 80%;
+  display: flex;
+  justify-content: space-between;}
+
+#fimage{
+  width: 200px;}
+
+.card {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+
+.containerFour:hover {
+  background-color: #25d366;
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+  
+  #f1, #f2, #f3 {
+    flex: 1;
+    padding-left: 100px;
+  }
+
+  #f1{
+    padding-top: 28px;
+    padding-left: -250px;
+  }
+
+  /* https://w0.peakpx.com/wallpaper/597/510/HD-wallpaper-nice-try-spiderman-comics-marvel-spider-stan-lee.jpg
+  https://c.wallhere.com/photos/12/ef/1920x1080_px_Comic_Art_deadpool-781794.jpg!d 
+
+  
+}
